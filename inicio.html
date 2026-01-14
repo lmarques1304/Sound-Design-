@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disney Princess Sound Game</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #ffdee9, #b5fffc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: black;
+            text-shadow: 4px 4px 8px rgba(255, 105, 180, 0.5); /* sombra rosa transparente */
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            background-color: #ffb6c1;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #ff69b4;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Disney Movies Sound Game</h1>
+    <button id="startBtn">Começar o Jogo</button>
+
+    <script>
+        const startBtn = document.getElementById('startBtn');
+        startBtn.addEventListener('click', () => {
+            window.location.href = "niveis.html";
+        });
+    </script>
+</body>
+</html>

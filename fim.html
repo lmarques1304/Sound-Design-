@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fim do Jogo</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(to bottom, #ffedbc, #ffe2e2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        margin: 0;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 3em;
+        color: #ff69b4;
+        text-shadow: 3px 3px 8px rgba(0,0,0,0.2);
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 1.5em;
+        color: #555;
+        margin-bottom: 40px;
+    }
+
+    button {
+        padding: 15px 40px;
+        font-size: 1.2em;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        background-color: #ffb6c1;
+        transition: 0.3s;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+
+    button:hover {
+        background-color: #ff69b4;
+        color: white;
+        transform: scale(1.05);
+    }
+
+    .confetti {
+        position: fixed;
+        width: 10px;
+        height: 10px;
+        background-color: #ff69b4;
+        top: -10px;
+        animation: fall 3s linear infinite;
+        opacity: 0.8;
+        border-radius: 50%;
+    }
+
+    @keyframes fall {
+        0% { transform: translateY(0) rotate(0deg); }
+        100% { transform: translateY(100vh) rotate(360deg); }
+    }
+</style>
+</head>
+<body>
+
+<h1>Parabéns!</h1>
+<p>Chegaste ao fim do jogo</p>
+<button onclick="goToMenu()">Voltar ao menu principal</button>
+
+<div class="confetti" style="left:10%; animation-delay:0s;"></div>
+<div class="confetti" style="left:30%; animation-delay:1s;"></div>
+<div class="confetti" style="left:50%; animation-delay:0.5s;"></div>
+<div class="confetti" style="left:70%; animation-delay:1.5s;"></div>
+<div class="confetti" style="left:90%; animation-delay:0.8s;"></div>
+
+<script>
+    function goToMenu() {
+        window.location.href = "niveis.html"; // muda para o menu principal
+    }
+</script>
+
+</body>
+</html>

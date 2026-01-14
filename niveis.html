@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Níveis - Disney Princess Sound Game</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #ffdee9, #b5fffc);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+            padding: 50px;
+            gap: 50px;
+        }
+
+        .info-box {
+            background-color: #ffb6c1;
+            border-radius: 15px;
+            padding: 20px;
+            width: 200px;
+            height: fit-content;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            font-size: 1.2em;
+            color: black;
+            text-shadow: 2px 2px 4px rgba(255, 105, 180, 0.3);
+        }
+
+        .game-area {
+            display: grid;
+            grid-template-columns: repeat(5, 100px);
+            grid-gap: 20px;
+        }
+
+        .level {
+            width: 100px;
+            height: 100px;
+            background-color: #ffb6c1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+
+        .level:hover {
+            background-color: #ff69b4;
+            color: white;
+            transform: scale(1.1);
+        }
+
+        h2 {
+            color: black;
+            text-shadow: 4px 4px 8px rgba(255, 105, 180, 0.5);
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="info-box">
+            <h2>Objetivo</h2>
+            <p>Ouve o som e adivinha o filme da Disney!</p>
+        </div>
+
+        <div class="game-area">
+            <div class="level" onclick="window.location.href='niveis/nivel1.html'">1</div>
+            <div class="level" onclick="window.location.href='niveis/nivel2.html'">2</div>
+            <div class="level" onclick="window.location.href='niveis/nivel3.html'">3</div>
+            <div class="level" onclick="window.location.href='niveis/nivel4.html'">4</div>
+            <div class="level" onclick="window.location.href='niveis/nivel5.html'">5</div>
+            <div class="level" onclick="window.location.href='niveis/nivel6.html'">6</div>
+            <div class="level" onclick="window.location.href='niveis/nivel7.html'">7</div>
+            <div class="level" onclick="window.location.href='niveis/nivel8.html'">8</div>
+            <div class="level" onclick="window.location.href='niveis/nivel9.html'">9</div>
+            <div class="level" onclick="window.location.href='niveis/nivel10.html'">10</div>
+        </div>
+    </div>
+</body>
+</html>
